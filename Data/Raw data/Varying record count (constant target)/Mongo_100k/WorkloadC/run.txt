@@ -1,3 +1,4 @@
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
 [OVERALL], RunTime(ms), 1586
 [OVERALL], Throughput(ops/sec), 3152.5851197982347
 [TOTAL_GCS_PS_Scavenge], Count, 5
