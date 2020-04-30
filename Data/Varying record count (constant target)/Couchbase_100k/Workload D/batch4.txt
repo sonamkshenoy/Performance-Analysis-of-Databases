@@ -1,0 +1,35 @@
+ 
+./bin/ycsb load couchbase2 -P workloads/workloadd -p couchbase.host=localhost -p couchbase.bucket=ycsb -p couchbase.password=123456 -p recordcount=100000 > ccbd/input4.txt
+
+Loading workload...
+Starting test.
+Apr 21, 2020 12:42:33 PM site.ycsb.db.couchbase2.Couchbase2Client logParams
+INFO: ===> Using Params: host=localhost, bucket=ycsb, upsert=false, persistTo=NONE, replicateTo=NONE, syncMutResponse=true, adhoc=false, kv=true, maxParallelism=1, queryEndpoints=1, kvEndpoints=1, queryEndpoints=1, epoll=false, boost=3, networkMetricsInterval=0, runtimeMetricsInterval=0
+Apr 21, 2020 12:42:33 PM com.couchbase.client.core.CouchbaseCore <init>
+INFO: CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=3, computationPoolSize=3, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.1 (git: 2.3.1, core: 1.3.1), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=10000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=true, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@5298d863, queryTimeout=75000, viewTimeout=75000, kvTimeout=10000, connectTimeout=30000, dnsSrvEnabled=false}
+Apr 21, 2020 12:42:35 PM com.couchbase.client.core.node.CouchbaseNode signalConnected
+INFO: Connected to Node localhost
+Apr 21, 2020 12:42:35 PM com.couchbase.client.core.config.DefaultConfigurationProvider$8 call
+INFO: Opened bucket ycsb
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+
+running:
+
+Loading workload...                                                                                                                  
+Starting test.                                                                                                                       
+Apr 21, 2020 12:44:15 PM site.ycsb.db.couchbase2.Couchbase2Client logParams                                                          
+INFO: ===> Using Params: host=localhost, bucket=ycsb, upsert=false, persistTo=NONE, replicateTo=NONE, syncMutResponse=true, adhoc=false, kv=true, maxParallelism=1, queryEndpoints=1, kvEndpoints=1, queryEndpoints=1, epoll=false, boost=3, networkMetricsInterval=0, runtimeMetricsInterval=0
+Apr 21, 2020 12:44:15 PM com.couchbase.client.core.CouchbaseCore <init>
+INFO: CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=3, computationPoolSize=3, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.1 (git: 2.3.1, core: 1.3.1), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=10000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=true, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@60c57efb, queryTimeout=75000, viewTimeout=75000, kvTimeout=10000, connectTimeout=30000, dnsSrvEnabled=false}
+Apr 21, 2020 12:44:15 PM com.couchbase.client.core.CouchbaseCore <init>
+INFO: CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=3, computationPoolSize=3, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.1 (git: 2.3.1, core: 1.3.1), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=10000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=true, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@60c57efb, queryTimeout=75000, viewTimeout=75000, kvTimeout=10000, connectTimeout=30000, dnsSrvEnabled=false}
+Apr 21, 2020 12:44:15 PM com.couchbase.client.core.node.CouchbaseNode signalConnected
+INFO: Connected to Node localhost
+Apr 21, 2020 12:44:15 PM com.couchbase.client.core.node.CouchbaseNode signalConnected
+INFO: Connected to Node localhost
+Apr 21, 2020 12:44:15 PM com.couchbase.client.core.config.DefaultConfigurationProvider$8 call
+INFO: Opened bucket ycsb
+Apr 21, 2020 12:44:15 PM com.couchbase.client.core.config.DefaultConfigurationProvider$8 call
+INFO: Opened bucket ycsb
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []

@@ -1,0 +1,21 @@
+ 
+./bin/ycsb load mongodb -s -P workloads/workloada -p recordcount=100000  > ccbd/outputloa.txt
+
+Loading workload...
+Starting test.
+2020-04-21 23:26:05:628 0 sec: 0 operations; est completion in 0 second 
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-04-21 23:26:15:571 10 sec: 24278 operations; 2427.8 current ops/sec; est completion in 32 seconds [INSERT: Count=24279, Max=2394111, Min=99, Avg=388.72, 90=308, 99=2681, 99.9=9183, 99.99=155007]                                                              
+2020-04-21 23:26:25:569 20 sec: 70597 operations; 4631.9 current ops/sec; est completion in 9 second [INSERT: Count=46318, Max=504063, Min=95, Avg=212.36, 90=231, 99=1198, 99.9=4823, 99.99=17567]                                                                  
+2020-04-21 23:26:30:334 24 sec: 100000 operations; 6170.62 current ops/sec; [CLEANUP: Count=1, Max=1488, Min=1488, Avg=1488, 90=1488, 99=1488, 99.9=1488, 99.99=1488] [INSERT: Count=29403, Max=174591, Min=91, Avg=160.16, 90=196, 99=610, 99.9=2513, 99.99=10679] 
+
+running:
+
+./bin/ycsb run mongodb -s -P workloads/workloada -p recordcount=100000 -p operationcount=5000 -threads 2 > ccbd/Mongo_100k_proper/WorkloadA/run.txt
+
+Loading workload...                                                                                                                  
+Starting test.                                                                                                                       
+2020-04-21 23:29:17:958 0 sec: 0 operations; est completion in 0 second                                                              
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []                              
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []                              
+2020-04-21 23:29:19:893 1 sec: 5000 operations; 2553.63 current ops/sec; [READ: Count=2509, Max=70015, Min=153, Avg=595.53, 90=915, 99=4827, 99.9=17167, 99.99=70015] [CLEANUP: Count=2, Max=1854, Min=5, Avg=929.5, 90=1854, 99=1854, 99.9=1854, 99.99=1854] [UPDATE: Count=2491, Max=72063, Min=173, Avg=596.48, 90=979, 99=4507, 99.9=8959, 99.99=72063]

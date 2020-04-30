@@ -1,0 +1,5 @@
+,[OVERALL] RunTime(ms),[OVERALL] Throughput(ops/sec),[READ] Operations,[READ] AverageLatency(us),[READ] MinLatency(us),[READ] MaxLatency(us),[READ] 95thPercentileLatency(us),[READ] 99thPercentileLatency(us),[READ] Return=OK,[CLEANUP] Operations,[CLEANUP] AverageLatency(us),[CLEANUP] MinLatency(us),[CLEANUP] MaxLatency(us),[CLEANUP] 95thPercentileLatency(us),[CLEANUP] 99thPercentileLatency(us),[UPDATE] Operations,[UPDATE] AverageLatency(us),[UPDATE] MinLatency(us),[UPDATE] MaxLatency(us),[UPDATE] 95thPercentileLatency(us),[UPDATE] 99thPercentileLatency(us),[UPDATE] Return=OK
+Couchbase,2790,1792.1146953405016,2513.0,667.0389972144848,102.0,22943.0,2325.0,6359.0,2513.0,2.0,2.5,1.0,4.0,4.0,4.0,2487.0,819.4644149577805,134.0,53151.0,2477.0,6863.0,2487.0
+Mongo,1962.0,2548.41997961264,2489.0,579.4865407794294,154.0,61535.0,1322.0,4547.0,2489.0,2.0,902.0,5.0,1799.0,1799.0,1799.0,2511.0,566.431302270012,178.0,65279.0,1078.0,3957.0,2511.0
+
+

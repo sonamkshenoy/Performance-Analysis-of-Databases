@@ -1,0 +1,20 @@
+ 
+./bin/ycsb load mongodb -s -P workloads/workloadd -p recordcount=100000  > ccbd/Mongo_100k_proper/WorkloadD/load.txt
+
+Loading workload...
+Starting test.
+2020-04-21 23:36:20:138 0 sec: 0 operations; est completion in 0 second 
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-04-21 23:36:30:121 10 sec: 37680 operations; 3767.62 current ops/sec; est completion in 17 seconds [INSERT: Count=37680, Max=663551, Min=107, Avg=237.43, 90=299, 99=1638, 99.9=5823, 99.99=13159] 
+2020-04-21 23:36:40:121 20 sec: 85760 operations; 4808 current ops/sec; est completion in 4 second [INSERT: Count=48080, Max=508415, Min=91, Avg=205.08, 90=233, 99=1302, 99.9=4855, 99.99=15527] 
+2020-04-21 23:36:44:245 24 sec: 100000 operations; 3453.8 current ops/sec; [CLEANUP: Count=1, Max=2273, Min=2272, Avg=2273, 90=2273, 99=2273, 99.9=2273, 99.99=2273] [INSERT: Count=14240, Max=508671, Min=92, Avg=287.19, 90=242, 99=784, 99.9=3223, 99.99=506623]
+
+running:
+./bin/ycsb run mongodb -s -P workloads/workloadd -p recordcount=100000 -p operationcount=5000 -threads 2 > ccbd/Mongo_100k_proper/WorkloadD/run.txt
+
+Loading workload...
+Starting test.
+2020-04-21 23:37:04:720 0 sec: 0 operations; est completion in 0 second 
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-04-21 23:37:06:174 1 sec: 5000 operations; 3367 current ops/sec; [READ: Count=4734, Max=60223, Min=142, Avg=401.17, 90=631, 99=2339, 99.9=7251, 99.99=60223] [CLEANUP: Count=2, Max=5691, Min=5, Avg=2847.5, 90=5691, 99=5691, 99.9=5691, 99.99=5691] [INSERT: Count=266, Max=10351, Min=233, Avg=642.85, 90=868, 99=3189, 99.9=10351, 99.99=10351]
