@@ -1,0 +1,18 @@
+loading:
+
+/bin/ycsb load mongodb -s -P workloads/workloadd -p recordcount=100000 -threads 16 > ccbd/outputload4.txt
+
+Loading workload...
+Starting test.
+2020-04-17 12:44:53:357 0 sec: 0 operations; est completion in 0 seconds 
+2020-04-17 12:45:03:273 10 sec: 32527 operations; 3252.37 current ops/sec; est completion in 21 seconds [INSERT: Count=32527, Max=718335, Min=363, Avg=4691.98, 90=6451, 99=13431, 99.9=26447, 99.99=715775] 
+2020-04-17 12:45:13:277 20 sec: 85062 operations; 5251.4 current ops/sec; est completion in 4 seconds [INSERT: Count=52535, Max=249983, Min=126, Avg=3042.22, 90=4435, 99=11319, 99.9=39327, 99.99=161535] 
+2020-04-17 12:45:15:286 22 sec: 100000 operations; 7435.54 current ops/sec; [CLEANUP: Count=16, Max=5415, Min=1, Avg=340.62, 90=6, 99=5415, 99.9=5415, 99.99=5415] [INSERT: Count=14938, Max=57439, Min=119, Avg=1982.54, 90=3463, 99=9191, 99.9=26607, 99.99=56543] 
+
+running:
+./bin/ycsb run mongodb -s -P workloads/workloadd  -p operationcount=5000 -p recordcount=100000   -threads 2 > ccbd/outputrun4.txt
+
+Loading workload...
+Starting test.
+2020-04-17 12:45:46:478 0 sec: 0 operations; est completion in 0 seconds 
+2020-04-17 12:45:48:428 2 sec: 5000 operations; 2439.02 current ops/sec; [READ: Count=4736, Max=50079, Min=160, Avg=564.2, 90=831, 99=4427, 99.9=9671, 99.99=50079] [CLEANUP: Count=2, Max=1745, Min=4, Avg=874.5, 90=1745, 99=1745, 99.9=1745, 99.99=1745] [INSERT: Count=264, Max=23359, Min=383, Avg=1311.97, 90=2553, 99=6579, 99.9=23359, 99.99=23359] 
